@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{821D4DFE-C265-4A09-A473-19F9F451FA39}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HastaneYönetimOtomasyon</RootNamespace>
+    <AssemblyName>HastaneYönetimOtomasyon</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="brans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="brans.Designer.cs">
+      <DependentUpon>brans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doktordetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doktordetay.Designer.cs">
+      <DependentUpon>doktordetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doktorguncelleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doktorguncelleme.Designer.cs">
+      <DependentUpon>doktorguncelleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doktorkayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doktorkayit.Designer.cs">
+      <DependentUpon>doktorkayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doktorlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doktorlogin.Designer.cs">
+      <DependentUpon>doktorlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="duyuru.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="duyuru.Designer.cs">
+      <DependentUpon>duyuru.cs</DependentUpon>
+    </Compile>
+    <Compile Include="genellogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="genellogin.Designer.cs">
+      <DependentUpon>genellogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HastaKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HastaKayit.Designer.cs">
+      <DependentUpon>HastaKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hastalogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hastalogin.Designer.cs">
+      <DependentUpon>hastalogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hastanguncelleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hastanguncelleme.Designer.cs">
+      <DependentUpon>hastanguncelleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="randevu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="randevu.Designer.cs">
+      <DependentUpon>randevu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="randevulist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="randevulist.Designer.cs">
+      <DependentUpon>randevulist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sekreterdetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sekreterdetay.Designer.cs">
+      <DependentUpon>sekreterdetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sekreterguncelleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sekreterguncelleme.Designer.cs">
+      <DependentUpon>sekreterguncelleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sekreterkayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sekreterkayit.Designer.cs">
+      <DependentUpon>sekreterkayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sekreterlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sekreterlogin.Designer.cs">
+      <DependentUpon>sekreterlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sqlbaglantisi.cs" />
+    <EmbeddedResource Include="brans.resx">
+      <DependentUpon>brans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doktordetay.resx">
+      <DependentUpon>doktordetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doktorguncelleme.resx">
+      <DependentUpon>doktorguncelleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doktorkayit.resx">
+      <DependentUpon>doktorkayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doktorlogin.resx">
+      <DependentUpon>doktorlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="duyuru.resx">
+      <DependentUpon>duyuru.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="genellogin.resx">
+      <DependentUpon>genellogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HastaKayit.resx">
+      <DependentUpon>HastaKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hastalogin.resx">
+      <DependentUpon>hastalogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hastanguncelleme.resx">
+      <DependentUpon>hastanguncelleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="randevu.resx">
+      <DependentUpon>randevu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="randevulist.resx">
+      <DependentUpon>randevulist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sekreterdetay.resx">
+      <DependentUpon>sekreterdetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sekreterguncelleme.resx">
+      <DependentUpon>sekreterguncelleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sekreterkayit.resx">
+      <DependentUpon>sekreterkayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sekreterlogin.resx">
+      <DependentUpon>sekreterlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

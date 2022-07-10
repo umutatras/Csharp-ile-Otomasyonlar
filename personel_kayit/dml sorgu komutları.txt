@@ -1,0 +1,14 @@
+-select//select*from personel_tablo
+-ýnsert
+-delete
+-update
+*-->tümünü seç 
+From-->den seç
+
+where 
+and
+or 
+mantýksal operatörler
+'metinsel ifadeler' tek týrnak içinde yazýlýr
+
+Data Source=UMUT-PC;Initial Catalog=PersonelVeriTabani;Integrated Security=True

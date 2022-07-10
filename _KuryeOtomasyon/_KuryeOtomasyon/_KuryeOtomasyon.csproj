@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8AB8F346-5ACD-48F2-9ED0-0D3FB86C8C57}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>_KuryeOtomasyon</RootNamespace>
+    <AssemblyName>_KuryeOtomasyon</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="girisformu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="girisformu.Designer.cs">
+      <DependentUpon>girisformu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kuryekleformu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kuryekleformu.Designer.cs">
+      <DependentUpon>kuryekleformu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="musteriekleformu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="musteriekleformu.Designer.cs">
+      <DependentUpon>musteriekleformu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="paketekleformu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="paketekleformu.Designer.cs">
+      <DependentUpon>paketekleformu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="teslimformu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="teslimformu.Designer.cs">
+      <DependentUpon>teslimformu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="veritabani.cs" />
+    <Compile Include="yetkiliformu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yetkiliformu.Designer.cs">
+      <DependentUpon>yetkiliformu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yetkilikayıt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yetkilikayıt.Designer.cs">
+      <DependentUpon>yetkilikayıt.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="girisformu.resx">
+      <DependentUpon>girisformu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kuryekleformu.resx">
+      <DependentUpon>kuryekleformu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="musteriekleformu.resx">
+      <DependentUpon>musteriekleformu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="paketekleformu.resx">
+      <DependentUpon>paketekleformu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="teslimformu.resx">
+      <DependentUpon>teslimformu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yetkiliformu.resx">
+      <DependentUpon>yetkiliformu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yetkilikayıt.resx">
+      <DependentUpon>yetkilikayıt.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

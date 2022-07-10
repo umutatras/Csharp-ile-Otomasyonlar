@@ -1,0 +1,43 @@
+bit=0 - 1 veya true-false deðiþken tipi tutar
+
+char(10)=sabit deðerleri tutar(tc,telefon gibi)
+
+datetimeoffset=ülkeler arasýndaki saat farkýný ortam bir noktada buluþturur
+
+decimal=ondalýklar veriler için kullanýlýr
+
+float=ondalýklý veriler için kullanýlýr decimal>float
+
+geoagrapfy=enlem boylam
+
+geometri=geometrik bilgiler
+
+image=resimler vs
+
+int=tam sayýlar
+
+money=para birimleri
+
+nchar=latin alfabesi dýþýnda kullanýlan diller
+
+numeric=decimal ile ayný çalýþýyor
+
+real=gerçel sayýlar için
+
+smalldatetime=1900-2070 arasý tarih
+
+smallint=+-32600
+
+smallmoney=küçük para birimleri
+
+sql_variant=bilinmeyen veri tipleri 
+
+text=uzun metin deðerleri için kullanýlýr
+
+tinyint=(0-255) tam sayýlar
+
+xml=xml için
+
+varchar=deðiþken uzunluklu karakterler için
+
+
